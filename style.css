@@ -387,3 +387,88 @@ pre code {
     text-align: left;
 }
 
+
+#enquiry form {
+    background-color: white;
+    border: 1px solid #d0d7e2;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.form-pair {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-pair .form-field {
+    flex: 1 1 14rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: white;
+    border: 2px solid #9db4e8;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6em 0.8em;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+}
+
+input:enabled:hover,
+textarea:enabled:hover {
+    border-color: #1b4db3;
+}
+
+input:placeholder-shown,
+textarea:placeholder-shown {
+    border-style: dashed;
+}
+
+input[type="text"]:read-only {
+    background-color: #e9edf3;
+    cursor: default;
+}
+
+::placeholder {
+    color: #6b7280;
+    font-style: italic;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #1b4db3;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    margin-right: 0.75rem;
+    padding: 0.5em 1em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #0f2f73;
+}
+
+#enquiry button {
+    align-self: flex-start;
+}
+
