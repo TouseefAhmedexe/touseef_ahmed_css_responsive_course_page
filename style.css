@@ -273,3 +273,68 @@ main > section > h2 {
     margin-top: auto;
 }
 
+
+.lesson-layout {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.lesson-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.lesson-main article {
+    background-color: white;
+    border: 1px solid #d0d7e2;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    padding: 1.25rem;
+}
+
+code {
+    background-color: #e8f0fe;
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+}
+
+pre {
+    background-color: #1f2933;
+    border-radius: 8px;
+    color: #f4f7fb;
+    margin: 0;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+.lesson-sidebar {
+    align-self: start;
+    background-color: #e8f0fe;
+    border: 1px solid #9db4e8;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.lesson-sidebar ul {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+    .lesson-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+
+    .lesson-sidebar {
+        position: sticky;
+        top: 1rem;
+    }
+}
+
