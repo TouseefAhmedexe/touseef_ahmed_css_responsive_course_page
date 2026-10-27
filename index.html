@@ -220,6 +220,45 @@
 
             </div>
         </section>
+
+        <section id="enquiry">
+            <h2>Course Enquiry</h2>
+
+            <p>All fields except the attachment are required.</p>
+
+            <form id="enquiry-form">
+
+                <div class="form-field">
+                    <label for="enquiry-topic">Course</label>
+                    <input type="text" id="enquiry-topic" name="enquiry_topic" value="HTML and CSS Course" readonly>
+                </div>
+
+                <div class="form-pair">
+                    <div class="form-field">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" autocomplete="name" minlength="3" maxlength="50" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email_address" placeholder="example@gmail.com" autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="attachment-file">Attachment (PDF, JPG or PNG)</label>
+                    <input type="file" id="attachment-file" name="attachment_file" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+
+                <div class="form-field">
+                    <label for="enquiry-message">Message</label>
+                    <textarea id="enquiry-message" name="enquiry_message" rows="5" placeholder="Write your question here" minlength="10" maxlength="300" required></textarea>
+                </div>
+
+                <button type="submit">Send Enquiry</button>
+
+            </form>
+        </section>
     </main>
 </body>
 
