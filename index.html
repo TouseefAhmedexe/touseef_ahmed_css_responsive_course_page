@@ -107,6 +107,78 @@
 
             </div>
         </section>
+
+        <section id="lessons">
+            <h2>Featured Lesson</h2>
+
+            <div class="lesson-layout">
+
+                <div class="lesson-main">
+                    <article id="lesson-flexbox">
+                        <h3>Flexbox: one-dimensional layout</h3>
+                        <p>
+                            Flexbox lays items out in one direction at a time, in a row or in a column.
+                            Set <code>display: flex</code> on the container and its direct children
+                            become flex items.
+                        </p>
+<pre><code>.toolbar {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}</code></pre>
+                    </article>
+
+                    <article id="lesson-grid">
+                        <h3>Grid: layout in rows and columns</h3>
+                        <p>
+                            Grid places items in rows and columns at the same time. The
+                            <code>repeat()</code> and <code>minmax()</code> functions with
+                            <code>auto-fit</code> make a card grid that fits any screen width.
+                        </p>
+<pre><code>.card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}</code></pre>
+                    </article>
+
+                    <article id="lesson-media-queries">
+                        <h3>Media queries: changing layout by screen width</h3>
+                        <p>
+                            Mobile-first CSS writes the small-screen styles first. Then a media query
+                            with <code>min-width</code> adds changes for wider screens.
+                        </p>
+<pre><code>.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}</code></pre>
+                    </article>
+                </div>
+
+                <aside class="lesson-sidebar">
+                    <h3>In This Lesson</h3>
+                    <ul>
+                        <li><a href="#lesson-flexbox">Flexbox</a></li>
+                        <li><a href="#lesson-grid">Grid</a></li>
+                        <li><a href="#lesson-media-queries">Media queries</a></li>
+                    </ul>
+
+                    <h3>Lesson Details</h3>
+                    <ul>
+                        <li>Task: Modern Layout and Responsive CSS</li>
+                        <li>Subject: CSS</li>
+                        <li>Tool: browser DevTools</li>
+                    </ul>
+                </aside>
+
+            </div>
+        </section>
     </main>
 </body>
 
