@@ -538,3 +538,25 @@ address {
     }
 }
 
+
+::selection {
+    background-color: #ffd54f;
+    color: #1f2933;
+}
+
+main > section:target > h2 {
+    border-bottom-color: #d97706;
+}
+
+.lesson-main article:target {
+    box-shadow: 0 0 0 4px #ffd54f;
+}
+
+li::marker {
+    color: #d97706;
+}
+
+.summary-card:nth-of-type(2) li::marker {
+    color: #ffd54f;
+}
+
