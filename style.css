@@ -42,3 +42,39 @@ img {
     display: block;
     max-width: 100%;
 }
+
+
+#site-header {
+    align-items: center;
+    background-color: #0f2f73;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem max(1rem, 4vw);
+}
+
+.site-title {
+    margin: 0;
+}
+
+#site-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    #site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #site-navigation ul {
+        justify-content: flex-end;
+    }
+}
