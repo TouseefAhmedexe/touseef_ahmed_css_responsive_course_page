@@ -472,3 +472,69 @@ input[type="file"]::file-selector-button:hover {
     align-self: flex-start;
 }
 
+
+#site-footer {
+    background-color: #0f2f73;
+    color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem max(1rem, 4vw);
+}
+
+#site-footer h2,
+#site-footer h3 {
+    font-size: 1.25rem;
+}
+
+#site-footer p {
+    margin: 0;
+}
+
+#site-footer a:link,
+#site-footer a:visited {
+    color: #ffd54f;
+}
+
+#site-footer a:hover {
+    color: white;
+}
+
+#site-footer a:active {
+    color: #ffb74d;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer-links {
+    display: grid;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    grid-column: 1 / -1;
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    #site-footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-about {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    #site-footer {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
