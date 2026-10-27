@@ -338,3 +338,52 @@ pre code {
     }
 }
 
+
+.summary-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+
+.summary-card {
+    background-color: white;
+    border: 2px solid #9db4e8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.summary-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px) rotate(-1deg);
+}
+
+.summary-card:nth-of-type(2) {
+    background: linear-gradient(135deg, #1b4db3, #0f2f73);
+    border-color: #0f2f73;
+    color: white;
+}
+
+.summary-tag {
+    background-color: #ffd54f;
+    border-radius: 999px;
+    color: #1f2933;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    padding: 0.2rem 0.9rem;
+}
+
+.summary-count {
+    font-weight: bold;
+}
+
+.summary-card ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    text-align: left;
+}
+
