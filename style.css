@@ -209,3 +209,67 @@ main > section > h2 {
     }
 }
 
+
+.course-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #d0d7e2;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-in-out;
+}
+
+.course-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px);
+}
+
+.course-card img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.course-card:hover img {
+    transform: scale(1.08);
+}
+
+.card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.card-body h3,
+.card-body p {
+    margin: 0;
+}
+
+.card-label {
+    color: #b8420d;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-body .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
